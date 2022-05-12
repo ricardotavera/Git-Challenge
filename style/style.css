@@ -1,0 +1,15 @@
+
+
+.nav {
+    background-color: tomato;
+    overflow: hidden;
+    height: 50px;
+}
+
+.nav a {
+    float: left;
+    margin-inline: 2%;
+    margin-top: 12px;
+    color: #fff;
+
+}
