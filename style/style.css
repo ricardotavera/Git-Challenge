@@ -1,15 +1,191 @@
-
-
-.nav {
-    background-color: tomato;
-    overflow: hidden;
-    height: 50px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.nav a {
-    float: left;
-    margin-inline: 2%;
-    margin-top: 12px;
-    color: #fff;
+.nav {
+    background-color: rgb(10, 35, 145);
+    overflow: hidden;
+    list-style-type: none;
+}
 
+h2,
+h1,
+h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.title {
+    margin: 30px;
+}
+
+.subtitle {
+    padding: 5px;
+    font-style: italic;
+    font-size: medium;
+    text-align: center;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav>li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.nav>li a:hover {
+    background-color: rgb(39, 36, 36);
+    transition: linear 0.4s;
+}
+
+.box-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    border-radius: 12px;
+    width: 20%;
+    overflow: hidden;
+    
+}
+
+div.gallery:hover {
+    box-shadow: 5px 5px 10px rgb(197, 197, 197);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+
+}
+
+
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+form {
+    width: 40%;
+    padding: 40px 40px 40px;
+    border-radius: 12px;
+    background: rgba(44, 75, 211, 0.767);
+}
+
+
+form input, textarea{
+    width: 95%;
+    padding: 15px;
+    margin-top: 22px;
+    border-radius: 12px;
+    border: 1px;
+}
+
+
+form input:focus, textarea:focus {
+    background-color: #ddd;
+    outline: none;
+   
+}
+
+textarea {
+    
+    height: 200px;
+}
+
+
+.form-back {
+    padding: 30px;
+    background-image: url("https://static-cse.canva.com/image/124987/Minimal-Patterns-Sound-Waves-Wallpaper.png");
+}
+/* Set a style for the submit button */
+.submit {
+    margin-top: 22px;
+    background-color: #08d388;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: large;
+}
+
+.submit:hover {
+    opacity: 2;
+    
+}
+
+.news p {
+    font-size: 1.2rem;
+}
+.news img {
+    padding: 0px 22px;
+    border-radius: 12px;
+    width: 500px;
+    
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+
+footer {
+    margin-top: 5%;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: rgb(40, 40, 41);
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: large;
+    display: block;
+    padding: 7%;
+  }
+
+  footer p {
+      text-align: center;
+      padding: auto;
+      
+  }
+
+  .foot-contact {
+    margin-top: 0px;
 }
